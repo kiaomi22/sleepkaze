@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Interaktif | Zaskia Jihan Nabila</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">PORTOFOLIO</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">HOME</a></li>
+                <li><a href="#profil" class="nav-link">PROFIL & KEAHLIAN</a></li>
+                <li><a href="#swebok" class="nav-link">SWEBOK</a></li>
+                <li><a href="#project" class="nav-link">PROJECT KP</a></li>
+                <li><a href="#konsep" class="nav-link">KONSEP INTI</a></li>
+                <li><a href="#analisis" class="nav-link">ANALISIS STRATEGI</a></li>
+                <li><a href="#kontak" class="nav-link">KONTAK</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="scroll-indicator"></div>
+
+    <header id="home">
+        <div class="theme-switcher-wrapper">
+            <label class="theme-switcher">
+                <input type="checkbox" id="theme-toggle">
+                <div class="slider round">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+            </label>
+        </div>
+        <div class="container header-content">
+            <h1>Zaskia Jihan Nabila</h1>
+            <p><span id="typing-effect"></span></p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="profil" class="hidden">
+            <div class="profile-container">
+                <div class="profile-pic">
+                    <img src="kia.jpg" alt="Zaskia Jihan Nabila">
+                </div>
+                <div class="profile-bio">
+                    <h2>Mobile Analyst & Software Engineer</h2>
+                    <p>
+                        Sebagai Mahasiswa Teknik Informatika, saya mengkhususkan diri sebagai Mobile Analyst dengan menggunakan prinsip Kapita Selekta fokus pada permasalahan modern dan inti. Saya menganalisis data user engagement dan performa teknis untuk merancang solusi berbasis data yang tidak hanya efektif, tapi juga meningkatkan pengalaman pengguna secara keseluruhan.
+                    </p>
+                </div>
+            </div>
+            <div class="skills-container">
+                <h2 class="chart-title">Keahlian Utama</h2>
+                <div class="skills-grid">
+                    <div class="skill-card"><i class="fab fa-java"></i> Java & C++ <div class="progress-bar"><div style="width: 85%;"></div></div></div>
+                    <div class="skill-card"><i class="fab fa-python"></i> Python <div class="progress-bar"><div style="width: 80%;"></div></div></div>
+                    <div class="skill-card"><i class="fas fa-chart-line"></i> Data Analytics <div class="progress-bar"><div style="width: 90%;"></div></div></div>
+                    <div class="skill-card"><i class="fas fa-tasks"></i> Agile/Scrum <div class="progress-bar"><div style="width: 95%;"></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="swebok" class="hidden">
+            <h2>Acuan SWEBOK</h2>
+            <p>Untuk memastikan proyek sesuai standar rekayasa perangkat lunak, beberapa Knowledge Area dari SWEBOK dijadikan acuan:</p>
+            <ul>
+                <li><strong>Software Requirements:</strong> Mendeskripsikan kebutuhan fungsional dan non-fungsional sistem.</li>
+                <li><strong>Software Design:</strong> Merancang arsitektur sistem, skema database, dan desain UI/UX.</li>
+                <li><strong>Software Construction:</strong> Implementasi coding modul event-tracking dan pembangunan dashboard.</li>
+                <li><strong>Software Testing:</strong> Melakukan verifikasi dan validasi data agar akurat dan fungsional.</li>
+            </ul>
+        </section>
+
+        <section id="project" class="hidden">
+            <h2>Rencana Judul Project KP & Skripsi</h2>
+            <p>Berdasarkan minat dan tren industri, berikut adalah judul yang saling mendukung:</p>
+            <div class="judul-container">
+                <h3>Judul KP:</h3>
+                <p><em>Pengembangan Prototype Dashboard untuk Monitoring Aktivitas Pengguna pada Aplikasi Mobile Menggunakan Google Data Studio.</em></p>
+            </div>
+            <div class="judul-container">
+                <h3>Judul Skripsi:</h3>
+                <p><em>Rancang Bangun Dashboard Visualisasi Data Interaktif untuk Memonitor User Engagement dan Retensi pada Aplikasi Mobile Berbasis Event-Tracking.</em></p>
+            </div>
+        </section>
+
+        <section id="konsep" class="hidden">
+            <h2>Konsep Inti: Kapita Selekta</h2>
+            <p>
+                Kapita Selekta adalah pendekatan "pemilihan topik-topik krusial" yang relevan. Website ini menerapkan konsep tersebut dengan hanya menampilkan informasi, analisis, dan proyek yang paling representatif dari kemampuan saya.
+            </p>
+        </section>
+
+        <section id="analisis" class="hidden">
+            <h2>Analisis Strategi</h2>
+            
+            <div class="analysis-container">
+                <div class="chart-wrapper">
+                    <h3>Analisis SWOT Diri</h3>
+                    <div class="chart-container">
+                        <canvas id="swotChart"></canvas>
+                    </div>
+                </div>
+                <div class="explanation-wrapper">
+                    <h3>Poin-Poin Kunci SWOT</h3>
+                    <div class="explanation-points">
+                        <p><strong>Strengths:</strong> Fondasi rekayasa perangkat lunak yang kuat, mahir dalam beberapa bahasa pemrograman (Java, C++, Python), dan terbiasa dengan metodologi Agile/Scrum.</p>
+                        <p><strong>Weaknesses:</strong> Perlu menyeimbangkan detail teknis dengan dampak bisnis, dan terus melatih kemampuan menerjemahkan data menjadi narasi bagi audiens non-teknis.</p>
+                        <p><strong>Opportunities:</strong> Permintaan pasar untuk Mobile Analyst sangat tinggi, didukung oleh banyaknya sumber belajar online untuk pengembangan skill berkelanjutan.</p>
+                        <p><strong>Threats:</strong> Persaingan kerja yang ketat dan perkembangan pesat *tools* AI menuntut pembelajaran terus-menerus dan standar analisis yang tinggi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="analysis-container porter-container">
+                <div class="chart-wrapper">
+                    <h3>Analisis Lingkungan (Porter's 5 Forces)</h3>
+                    <div class="chart-container">
+                        <canvas id="porterChart"></canvas>
+                    </div>
+                </div>
+                <div class="explanation-wrapper">
+                    <h3>Poin-Poin Kunci Porter's 5 Forces</h3>
+                    <div class="explanation-points">
+                         <p><strong>Persaingan & Daya Tawar Pembeli (Sangat Tinggi):</strong> Banyaknya kandidat serupa membuat perusahaan memiliki standar kualitas dan efisiensi yang sangat tinggi.</p>
+                         <p><strong>Ancaman Pendatang Baru (Tinggi):</strong> Akses belajar yang mudah membuat profesi ini terbuka bagi banyak orang, menuntut pengalaman nyata sebagai pembeda.</p>
+                         <p><strong>Ancaman Produk Pengganti (Sedang-Tinggi):</strong> *Tools* analitik dan AI dapat mengotomatisasi sebagian tugas, sehingga dibutuhkan pemahaman bisnis yang mendalam.</p>
+                         <p><strong>Daya Tawar Pemasok (Sedang):</strong> Ketergantungan pada platform analitik tertentu perlu diimbangi dengan penguasaan berbagai *tools*.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="kontak" class="hidden">
+            <h2>Kontak & Tautan</h2>
+            <p>Saya selalu terbuka untuk diskusi dan kolaborasi. Mari terhubung!</p>
+            <div class="connect-buttons">
+                <a href="[GANTI-DENGAN-LINK-LINKEDIN-KAMU]" target="_blank" class="btn btn-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:[GANTI-DENGAN-EMAIL-KAMU]" class="btn"><i class="fas fa-envelope"></i> Email Saya</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Zaskia Jihan Nabila. Didesain dan dikembangkan dengan penuh semangat.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
